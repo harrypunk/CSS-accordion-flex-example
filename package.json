@@ -1,0 +1,10 @@
+{
+  "name": "learncss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "harrypunk <keenkinkid@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "browser-sync start -s app -f app " 
+  }
+}
