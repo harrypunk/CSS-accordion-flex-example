@@ -16,18 +16,38 @@ body {
 
 .accordion .item {
     overflow: hidden;
-    flex: 0 0 80px;
+    flex: 1 0 80px;
     transition: flex .3s ease-in-out;
     display: flex;
 }
+
 
 .item:hover {
     flex: 10;
 }
 
+.item:hover .title .open {
+    transform: translateX(-40px);
+}
+
 .item .title {
     background: #444444;
     flex: 0 0 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+.title > * {
+    flex: 0 0 40px;
+}
+
+.title .collapse {
+    background: #222;
+}
+
+.title .open {
+    background: lightblue;
+    transition: transform .3s;
 }
 
 .content {
