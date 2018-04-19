@@ -11,21 +11,27 @@ body {
     display: flex;
     height: 300px;
     flex-flow: row nowrap;
+    justify-content: flex-start;
 }
 
 .accordion .item {
-    padding: 16px;
     overflow: hidden;
-    flex: 1 10;
-    transition: flex .3s ease-in-out
+    flex: 0 0 80px;
+    transition: flex .3s ease-in-out;
+    display: flex;
 }
 
 .item:hover {
     flex: 10;
 }
 
+.item .title {
+    background: #444444;
+    flex: 0 0 40px;
+}
+
 .content {
-    width: 400px;
+    flex: 0 0 400px;
 }
 
 .item:nth-child(1){
